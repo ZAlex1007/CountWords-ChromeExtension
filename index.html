@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+</head>
+<body>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1em;
+            padding: 1em;
+        }
+        .text{
+            grid-column: 1/3;
+            text-align: center;
+        }
+        .text p{
+            font-size: 2em;
+        }
+        .btn{
+            align-self: center;
+            justify-self: center;
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            background-color: aqua;
+            border-radius: 10px;
+        }
+        .btn:focus{
+            outline: none;
+        }
+        .btn:hover{
+            background-color: rgb(206, 255, 255);
+        }
+    </style>
+    <div class="grid">
+        <button id="countWords" class="btn">Count Words</button>
+        <button id="countChars" class="btn">Count Characters</button>
+        <div class="text">
+            <p id="showText">Counted: 875</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
